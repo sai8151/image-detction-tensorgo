@@ -45,7 +45,7 @@ Kibana.
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/sai8151/image-detction-tensorgo
    cd image-detection-flask-elasticsearch
    ```
 2. **Build the Docker image**:
