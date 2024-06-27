@@ -59,6 +59,9 @@ Kibana.
    sudo docker run 8501:8501 my-ubuntu-flask-app
    or
    sudo docker run -d -p 8501:8501 my-ubuntu-flask-app
+   
+   Auto run after restart
+   sudo docker run -d -p 8501:8501 --restart unless-stopped --name my-ubuntu-flask-app my-ubuntu-flask-app
    ```
 4. **Verify the running container**:
    ```bash
