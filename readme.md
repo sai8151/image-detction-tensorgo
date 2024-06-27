@@ -50,13 +50,25 @@ Kibana.
    ```
 2. **Build the Docker image**:
    ```bash
-   sudo docker build -t image-detection-app .
+   sudo docker build -t my-ubuntu-flask-app .
    ```
 3. **Run the Docker container**:
    ```bash
-   sudo docker run -d -p 5000:5000 --name image_detection_app image-detection-app
+   sudo docker run -d -p 8501:8501 --name my-ubuntu-flask-app my-ubuntu-flask-app
+   or
+   sudo docker run 8501:8501 my-ubuntu-flask-app
+   or
+   sudo docker run -d -p 8501:8501 my-ubuntu-flask-app
    ```
 4. **Verify the running container**:
    ```bash
    sudo docker ps
+   ```
+5. **Check logs**:
+   ```
+   sudo docker logs c64863d3ee6d
+   ```
+6. **Delete the data of docker**:
+   ```
+   sudo docker system prune -a --volumes
    ```
